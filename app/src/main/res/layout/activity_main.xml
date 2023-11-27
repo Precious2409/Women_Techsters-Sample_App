@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/teamimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/teamimg"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/team_1"
+        android:layout_width="268dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Team work all"
+        android:textAlignment="center"
+        android:textSize="38dp"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamimg" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Convalis vitae, dictum justo, iaculis id. Cras a ac augue netus egestas semper varius facilisis id."
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team_1"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <ImageView
+        android:id="@+id/firstdot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/doticon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_1"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:id="@+id/seconddot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/doticon"
+        app:layout_constraintStart_toEndOf="@id/firstdot"
+        app:layout_constraintTop_toBottomOf="@id/text_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:id="@+id/thirddot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/doticon"
+        app:layout_constraintStart_toEndOf="@id/seconddot"
+        app:layout_constraintTop_toBottomOf="@id/text_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:id="@+id/fourthdot"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/doticon"
+        app:layout_constraintStart_toEndOf="@id/thirddot"
+        app:layout_constraintTop_toBottomOf="@id/text_1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signinButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/black"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstdot" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#673AB7"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/signinButton"
+        app:layout_constraintTop_toBottomOf="@+id/firstdot" />
+</androidx.constraintlayout.widget.ConstraintLayout>
