@@ -15,9 +15,12 @@ class SigninActivity : AppCompatActivity() {
         var regActButton: AppCompatButton = findViewById(R.id.loginButton2)
 
         regActButton.setOnClickListener {
-            val i = Intent (this,RegisterActivity::class.java)
-
-            startActivity(i)
+           navigateToRegisterActivityPage()
         }
+    }
+
+    private fun navigateToRegisterActivityPage() {
+        val i = Intent (this,RegisterActivity::class.java)
+        startActivity(i)
     }
 }
